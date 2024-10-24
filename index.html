@@ -24,6 +24,16 @@
             return computerChoice;
         };
         console.log(getComputerChoice());
+
+        function getHumanChoice() {
+            let humanChoice = ''
+            do {
+                humanChoice = prompt("Choose one: rock, paper, or scissors");
+                humanChoice = humanChoice.toLowerCase();
+            } while (humanChoice !== 'rock' && humanChoice !== 'paper' && humanChoice !== 'scissors');
+            return humanChoice;
+        };
+        console.log(getHumanChoice());
     </script>
 </body>
 </html>
